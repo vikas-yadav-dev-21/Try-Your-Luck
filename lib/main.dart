@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+import 'package:random_guess/randomguess.dart';
+
+void main(){
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget{
+
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+      title: "Random Guess",
+
+      debugShowCheckedModeBanner: false,
+
+      theme: ThemeData(
+        primarySwatch: Colors.cyan,
+      ),
+
+      home: const RandomGuessGame(),
+    );
+
+  }
+}
+
+
